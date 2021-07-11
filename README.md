@@ -1,6 +1,6 @@
-# 3-column preview card component
+# Huddle landing page with single introductory section
 
-- Live website -(https://carlospwd-four-card-feature-section.netlify.app/)
+- Live website -(https://carlospwd-huddle.netlify.app/)
 
 ## Table of contents
 
@@ -16,13 +16,14 @@
 
 Users should be able to:
 
-- View the optimal layout for the section depending on their device's screen size
+- View the optimal layout for the page depending on their device's screen size
+- See hover states for all interactive elements on the page
 
 ## My process
 
 ### Screenshot
 
-![result](https://user-images.githubusercontent.com/85038929/125175767-1c7f4400-e183-11eb-8fc9-0033ab8a2a56.JPG)
+![result](https://user-images.githubusercontent.com/85038929/125201905-fd85be00-e225-11eb-8456-49643ae81f0d.JPG)
 
 ### Built with
 
@@ -32,27 +33,18 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to format the two cards on top of each other with the help of grid rows. I thought it would be more difficult but after some visualizing I was able to complete the project quickly
+I learned how to add icons into my projects and give them a hover interaction.
 
 ```css
-.boxes {
-	display: grid;
-	grid-template-areas: "card-1 stacked-boxes card-4";
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 30px;
-	margin-top: 10px;
-}
-
-.card-1,
-.card-4 {
-	margin: auto 0;
+div.ic:hover {
+	color: var(--sMagenta);
+	border-color: var(--sMagenta);
 }
 ```
 
 ### Questions
 
-- Is there another easier way to complete this project?
-- Is my method logical?
+- I wasn't able to fit the background image perfectly and was wondering if using the cover position was better so that it won't look bad in smaller screens
 
 ### Useful resources
 
