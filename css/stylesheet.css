@@ -1,0 +1,159 @@
+:root {
+	--violet: hsl(257, 40%, 49%);
+	--sMagenta: hsl(300, 69%, 71%);
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--violet);
+	background-image: url(../images/bg-desktop.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	padding: 0 2rem;
+	margin: 0;
+}
+
+main {
+	margin: 0 auto;
+	max-width: 350px;
+	display: flex;
+	flex-direction: column;
+}
+
+.header img {
+	height: auto;
+	width: 150px;
+	margin: 3rem 0;
+}
+
+.image img {
+	height: auto;
+	max-width: 100%;
+}
+
+h1 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+p,
+.btn {
+	font-family: "Open Sans", sans-serif;
+}
+
+.description {
+	text-align: center;
+}
+
+p {
+	margin-bottom: 2rem;
+}
+
+.btn {
+	background-color: white;
+	padding: 0.7rem 6rem;
+	border-radius: 50px;
+	color: var(--violet);
+	/* padding: 0.7rem 7rem; */
+	text-decoration: none;
+	box-shadow: 0 5px 10px rgb(75, 75, 75);
+}
+
+a.btn:hover {
+	background-color: var(--sMagenta);
+	color: white;
+}
+
+.icons {
+	margin-top: 3rem;
+	display: flex;
+	justify-content: center;
+}
+
+div.ic:hover {
+	color: var(--sMagenta);
+	border-color: var(--sMagenta);
+}
+
+.ic {
+	height: auto;
+	width: 20px;
+	padding: 5px;
+	border: 1px solid white;
+	border-radius: 100%;
+	text-align: center;
+}
+
+.second-i {
+	margin: 0 10px;
+}
+
+.footer {
+	margin-top: 3rem;
+	font-size: 11px;
+	text-align: center;
+}
+.footer a {
+	color: hsl(228, 84%, 71%);
+}
+
+@media (max-width: 380px) {
+	body {
+		background-image: url(../images/bg-mobile.svg);
+		background-position: left 0 top 0;
+		background-size: auto;
+	}
+}
+
+@media (min-width: 860px) {
+	main {
+		max-width: 90vw;
+		height: 100vh;
+	}
+
+	.header img {
+		width: 175px;
+	}
+
+	.header {
+		margin-bottom: 2.7rem;
+	}
+
+	h1 {
+		font-size: 2rem;
+		padding-right: 40px;
+	}
+
+	.middle {
+		display: flex;
+		justify-content: center;
+	}
+
+	.image {
+		max-width: 700px;
+	}
+
+	.description {
+		text-align: start;
+		max-width: 470px;
+		margin-left: 3rem;
+	}
+
+	.btn {
+		padding: 0.7rem 4rem;
+	}
+
+	.third {
+		justify-self: flex-end;
+	}
+
+	.icons {
+		justify-content: flex-end;
+		margin: auto 0 30px;
+	}
+}
