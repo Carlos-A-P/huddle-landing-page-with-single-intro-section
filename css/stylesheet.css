@@ -10,7 +10,7 @@ html {
 body {
 	background-color: var(--violet);
 	background-image: url(../images/bg-desktop.svg);
-	background-size: cover;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	color: white;
 	padding: 0 2rem;
@@ -102,11 +102,11 @@ div.ic:hover {
 	color: hsl(228, 84%, 71%);
 }
 
-@media (max-width: 380px) {
+@media (max-width: 860px) {
 	body {
 		background-image: url(../images/bg-mobile.svg);
 		background-position: left 0 top 0;
-		background-size: auto;
+		background-size: 100% 400px;
 	}
 }
 
